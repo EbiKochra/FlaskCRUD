@@ -7,14 +7,23 @@ Handle parameters and arguments sent to the URLs
 Write error handlers for server and user errors
 
 Commands to try out:
+
 curl -X GET -i -w '\n' localhost:5000/no_content
+
 curl -X GET -i -w '\n' localhost:5000/exp
+
 curl -X GET -i -w '\n' localhost:5000/data
+
 curl -X GET -i -w '\n' "localhost:5000/name_search?q=Abdel"
+
 curl -X GET -i -w '\n' "localhost:5000/count"
+
 curl -X GET -i localhost:5000/person/66c09925-589a-43b6-9a5d-d1601cf53287
+
 curl -X DELETE -i localhost:5000/person/66c09925-589a-43b6-9a5d-d1601cf53287
+
 curl -X GET -i localhost:5000/count
+
 curl -X POST -i -w '\n' \
   --url http://localhost:5000/person \
   --header 'Content-Type: application/json' \
@@ -29,8 +38,10 @@ curl -X POST -i -w '\n' \
         "country": "United States",
         "avatar": "http://dummyimage.com/139x100.png/cc0000/ffffff"
 }'
+
 curl -X POST -i -w '\n' \
   --url http://localhost:5000/person \
   --header 'Content-Type: application/json' \
   --data '{}'
+
 curl -X POST -i -w '\n' http://localhost:5000/notvalid
