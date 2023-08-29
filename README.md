@@ -6,6 +6,8 @@ Write routes to process requests to the Flask server at specific URLs
 Handle parameters and arguments sent to the URLs
 Write error handlers for server and user errors
 
+Use pip install flask to get latest version of flask
+
 Commands to try out:
 
 curl -X GET -i -w '\n' localhost:5000/no_content
